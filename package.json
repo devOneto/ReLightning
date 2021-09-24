@@ -7,6 +7,7 @@
   "author": "Neto Araujo <bipnerds@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start":" bundle exec jekyll serve --livereload"
+    "start":" bundle exec jekyll serve --livereload --watch",
+    "new":{"post":"echo 'criando novo post...' "}
     }
 }
