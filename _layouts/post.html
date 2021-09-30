@@ -4,6 +4,9 @@ layout: default
 
 <div class="post">
 
+  <!-- TODO: Set post cover -->
+  <img src="{{ page.cover | prepend: site.baseurl }}" style="height: 200px; width: 800px;">
+
   <div class="post-info">
     {% if page.date %}
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
