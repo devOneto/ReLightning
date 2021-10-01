@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn run new post
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Neto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Neto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Neto/.dotnet/tools
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  TypeError: Cannot convert object to primitive value
+      at Array.join (native)
+      at ShellString.[format] (/usr/local/lib/node_modules/yarn/lib/cli.js:135707:80)
+      at ShellString.toString (/usr/local/lib/node_modules/yarn/lib/cli.js:135703:30)
+      at sh (/usr/local/lib/node_modules/yarn/lib/cli.js:135796:55)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:62431:52
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "Blog",
+    "version": "1.0.0",
+    "description": "Blog do Neto",
+    "main": ".",
+    "repository": "git@github.com:devOneto/blog.git",
+    "author": "Neto Araujo <bipnerds@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "start":" bundle exec jekyll serve --livereload --watch",
+      "new":{"post":"echo 'criando novo post...' "}
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

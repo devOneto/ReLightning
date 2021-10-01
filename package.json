@@ -1,0 +1,13 @@
+{
+  "name": "Blog",
+  "version": "1.0.0",
+  "description": "Blog do Neto",
+  "main": ".",
+  "repository": "git@github.com:devOneto/blog.git",
+  "author": "Neto Araujo <bipnerds@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start":" bundle exec jekyll serve --livereload --watch",
+    "new":{"post":"echo 'criando novo post...' "}
+    }
+}
